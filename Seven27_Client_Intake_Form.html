@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seven27 Financial Services | Client Intake</title>
+<style>
+:root{
+  --burgundy:#5A071B;
+  --burgundy-dark:#360410;
+  --sand:#F5EBDD;
+  --gold:#C9A45B;
+  --cream:#FFFDF9;
+  --ink:#241A1B;
+  --muted:#75686A;
+  --border:#DCCFC1;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,var(--burgundy-dark),var(--burgundy));
+  color:var(--ink);
+}
+.wrap{min-height:100vh;padding:28px 16px 44px}
+.card{
+  max-width:720px;margin:auto;background:var(--cream);
+  border-radius:24px;overflow:hidden;
+  box-shadow:0 22px 60px rgba(0,0,0,.25);
+}
+.brand{
+  background:var(--burgundy);color:white;text-align:center;
+  padding:32px 24px 26px;border-bottom:3px solid var(--gold);
+}
+.logo{
+  font-family:Georgia,serif;font-size:42px;letter-spacing:-1px;
+}
+.sub{font-size:13px;letter-spacing:3px;color:#F3DFC0;margin-top:3px}
+.tagline{margin:18px 0 0;color:#fff;font-size:16px}
+.content{padding:30px 26px 34px}
+h1{
+  font-family:Georgia,serif;color:var(--burgundy);
+  font-size:32px;margin:0 0 8px;text-align:center;
+}
+.intro{text-align:center;color:var(--muted);margin:0 auto 26px;line-height:1.55;max-width:560px}
+.section-title{
+  color:var(--burgundy);font-size:12px;letter-spacing:2px;
+  font-weight:700;margin:24px 0 12px;
+}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{margin-bottom:14px}
+label{display:block;font-size:13px;font-weight:700;margin:0 0 7px}
+input,select,textarea{
+  width:100%;padding:13px 14px;border:1px solid var(--border);
+  border-radius:10px;background:white;font:inherit;color:var(--ink);
+  outline:none;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,164,91,.15)}
+textarea{min-height:120px;resize:vertical}
+.full{grid-column:1/-1}
+button{
+  width:100%;border:0;border-radius:12px;padding:16px;
+  background:var(--burgundy);color:white;font-weight:800;
+  letter-spacing:1px;font-size:15px;cursor:pointer;
+  box-shadow:0 8px 18px rgba(90,7,27,.2);
+}
+button:hover{background:var(--burgundy-dark)}
+.note{
+  text-align:center;color:var(--muted);font-size:12px;
+  line-height:1.5;margin:16px 0 0;
+}
+.footer{
+  background:var(--sand);text-align:center;padding:20px 16px;
+  color:var(--burgundy);font-size:13px;line-height:1.7;
+}
+.footer strong{font-family:Georgia,serif;font-size:18px}
+@media(max-width:600px){
+  .grid{grid-template-columns:1fr}
+  .full{grid-column:auto}
+  .logo{font-size:34px}
+  h1{font-size:27px}
+  .content{padding:25px 18px 30px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="brand">
+      <div class="logo">Seven27</div>
+      <div class="sub">FINANCIAL SERVICES</div>
+      <div class="tagline">Your Finances. Your Future. Your Seven27.</div>
+    </div>
+
+    <div class="content">
+      <h1>Let's Get Started</h1>
+      <p class="intro">
+        Tell us a little about yourself and what you need help with.
+        We'll review your information and contact you about next steps.
+      </p>
+
+      <form action="https://formsubmit.co/seven27financialservices@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Seven27 Financial Services Client Inquiry">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="section-title">YOUR INFORMATION</div>
+        <div class="grid">
+          <div class="field">
+            <label for="first">First Name *</label>
+            <input id="first" name="First Name" required>
+          </div>
+          <div class="field">
+            <label for="last">Last Name *</label>
+            <input id="last" name="Last Name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number *</label>
+            <input id="phone" name="Phone Number" type="tel" required>
+          </div>
+          <div class="field">
+            <label for="email">Email Address *</label>
+            <input id="email" name="Email Address" type="email" required>
+          </div>
+          <div class="field">
+            <label for="contact">Preferred Contact Method</label>
+            <select id="contact" name="Preferred Contact Method">
+              <option value="">Choose one</option>
+              <option>Call</option>
+              <option>Text</option>
+              <option>Email</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="type">Client Type</label>
+            <select id="type" name="Client Type">
+              <option value="">Choose one</option>
+              <option>Individual</option>
+              <option>Self-Employed</option>
+              <option>Business Owner</option>
+              <option>New Business</option>
+              <option>Tax Professional / Preparer</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-title">WHAT CAN WE HELP YOU WITH?</div>
+        <div class="field">
+          <select name="Service Needed" required>
+            <option value="">Select a service *</option>
+            <option>Tax Preparation</option>
+            <option>Bookkeeping</option>
+            <option>Business Formation</option>
+            <option>Notary Services</option>
+            <option>Tax Preparer Training</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="section-title">TELL US MORE</div>
+        <div class="field">
+          <textarea name="How Can We Help?" placeholder="Briefly tell us what you need help with."></textarea>
+        </div>
+
+        <button type="submit">SEND MY INFORMATION →</button>
+        <p class="note">
+          Please do not enter Social Security numbers, bank account numbers,
+          passwords, or tax documents in this form.
+        </p>
+      </form>
+    </div>
+
+    <div class="footer">
+      <strong>Seven27 Financial Services</strong><br>
+      504-377-2525 &nbsp; • &nbsp; seven27financialservices@gmail.com
+    </div>
+  </div>
+</div>
+</body>
+</html>
